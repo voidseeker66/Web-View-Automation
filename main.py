@@ -111,7 +111,7 @@ def run_cycle(driver: webdriver.Chrome, cycle: int) -> bool:
         js_click(driver, btn)
         log.info("Bouton Obtenir clique.")
     except NoSuchElementException:
-        log.error("Bouton Obtenir introuvable.")
+        log.error("Bouton Obtenir pas la.")
         return False
 
     time.sleep(2)
@@ -124,7 +124,7 @@ def run_cycle(driver: webdriver.Chrome, cycle: int) -> bool:
         log.info("Reprise apres cooldown.")
         return run_cycle(driver, cycle)
 
-    log.info(f"Compte a rebours en cours ({COUNTDOWN_S}s)...")
+    log.info(f"Compte rebours en cours ({COUNTDOWN_S}s)...")
     for remaining in range(COUNTDOWN_S, 0, -5):
         log.info(f"{remaining}s restantes...")
         time.sleep(5)
@@ -143,9 +143,9 @@ def run_cycle(driver: webdriver.Chrome, cycle: int) -> bool:
             (By.XPATH, "//a[contains(text(),'Retour')] | //button[contains(text(),'Retour')]")
         ))
         js_click(driver, back_btn)
-        log.info("Retour aux services effectue.")
+        log.info("Retour aux service.")
     except TimeoutException:
-        log.info("Bouton Retour non trouve.")
+        log.info("Bouton Retour pas trouve.")
 
     return True
 
