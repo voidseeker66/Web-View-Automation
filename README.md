@@ -101,7 +101,7 @@ Il illustre uniquement des mécanismes d'interaction avec des interfaces web.
 ## License
 
 Proprietary — See [LICENSE](./LICENSE) for details.  
-(c) 2026 tousdegeyulaa. All rights reserved.
+(c) 2026 voidseeker66. All rights reserved.
 
 ---
 
