@@ -105,4 +105,4 @@ Proprietary — See [LICENSE](./LICENSE) for details.
 
 ---
 
-⭐ Si ce projet t'a été utile dans ton apprentissage, laisse une star !
+⭐ laisse une star !
